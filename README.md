@@ -1,7 +1,6 @@
 # ProximalAlgorithms.jl
 
 [![Build Status](https://travis-ci.org/kul-forbes/ProximalAlgorithms.jl.svg?branch=master)](https://travis-ci.org/kul-forbes/ProximalAlgorithms.jl)
-[![Coverage Status](https://coveralls.io/repos/kul-forbes/ProximalAlgorithms.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/kul-forbes/ProximalAlgorithms.jl?branch=master)
 [![codecov.io](http://codecov.io/github/kul-forbes/ProximalAlgorithms.jl/coverage.svg?branch=master)](http://codecov.io/github/kul-forbes/ProximalAlgorithms.jl?branch=master)
 
 Proximal algorithms (also known as "splitting" algorithms or methods) for nonsmooth optimization in Julia.
@@ -21,7 +20,7 @@ julia> Pkg.add("ProximalAlgorithms")
 Algorithm                             | Function      | Reference
 --------------------------------------|---------------|-----------
 Douglas-Rachford splitting algorithm  | [`douglasrachford`](src/algorithms/douglasrachford.jl) | [[1]][eckstein_1989]
-Forward-backward splitting (i.e. proximal gradient) algorithm | [`FBS`](src/algorithms/forwardbackward.jl) | [[2]][tseng_2008], [[3]][beck_2009]
+Forward-backward splitting (i.e. proximal gradient) algorithm | [`forwardbackward`](src/algorithms/forwardbackward.jl) | [[2]][tseng_2008], [[3]][beck_2009]
 Chambolle-Pock primal dual algorithm  | [`chambollepock`](src/algorithms/primaldual.jl) | [[4]][chambolle_2011]
 Vũ-Condat primal-dual algorithm       | [`vucondat`](src/algorithms/primaldual.jl) | [[6]][vu_2013], [[7]][condat_2013]
 Davis-Yin splitting algorithm         | [`davisyin`](src/algorithms/davisyin.jl) | [[9]][davis_2017]
